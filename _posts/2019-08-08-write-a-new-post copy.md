@@ -2,8 +2,8 @@
 title: Test New Post and Categories
 author: dzoelfi
 date: 2025-06-12 07:00:00 +0700
-categories: [Blogging, Arcfra]
-tags: [arcfra]
+categories: [Blogging, Skudonet]
+tags: [skudonet]
 render_with_liquid: false
 ---
 
