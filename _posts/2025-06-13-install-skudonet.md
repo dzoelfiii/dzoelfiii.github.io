@@ -1,7 +1,7 @@
 ---
 title: Install Skudonet
 author: dzoelfi
-date: 2025-06-13 07:00:00 +0700
+date: 2025-06-12 07:00:00 +0700
 categories: [Blogging, Skudonet]
 tags: [skudonet]
 render_with_liquid: false
@@ -31,32 +31,45 @@ Instalasi Skudonet pada Debian 12 cukup mudah dan _straightforward_. Langkah yan
 1. Menambah Repositori Skudonet
 
     > echo "deb http://repo.skudonet.com/ce/v7 bookworm main" >> /etc/apt/sources.list.d/skudonet.list
-    
+    ![Desktop View](/assets/img/blog/install-skudonet/cek-repo.png){: .normal }
     > wget -O - http://repo.skudonet.com/ce/skudonet.com.gpg.key | apt-key add -
+    ![Desktop View](/assets/img/blog/install-skudonet/add-gpg-key.png){: .normal }
+    ![Desktop View](/assets/img/blog/install-skudonet/install-gpg.png){: .normal }
 
 2. Update Repository
    
     > apt update
+    ![Desktop View](/assets/img/blog/install-skudonet/update.png){: .normal }
 
 3. Install Skudonet
 
     > apt install skudonet skudonet-gui-core
+    ![Desktop View](/assets/img/blog/install-skudonet/install-skudonet.png){: .normal }
 
 4. Reset password root
 
     > passwd root
+    
+    ![Desktop View](/assets/img/blog/install-skudonet/reset-root.png){: .normal }
 
 5. Check Service Skudonet
 
     > systemctl service skudonet
+    ![Desktop View](/assets/img/blog/install-skudonet/skudonet-status.png){: .normal }
 
 6. Akses dashboard Skudonet via Browser
    
    > IP Address:444
+   ![Desktop View](/assets/img/blog/install-skudonet/skudonet-login.png){: .normal }
 
 
 ## Hasil
 Setelah langkah-langkah sebelumnya sudah dilakukan, Skudonet telah berhasil terinstall dan dapat siap digunakan untuk melindungi website / aplikasi. Untuk masuk ke dashboard Skudonet, masukan user "root" dan "password" yang telah ditentukan sebelumnya.
+![Desktop View](/assets/img/blog/install-skudonet/skudonet-dashboard.png){: .normal }\
+![Desktop View](/assets/img/blog/install-skudonet/farm.png){: .normal }
+![Desktop View](/assets/img/blog/install-skudonet/ssl.png){: .normal }
+![Desktop View](/assets/img/blog/install-skudonet/ruleset.png){: .normal }
+![Desktop View](/assets/img/blog/install-skudonet/system.png){: .normal }
 
 Demikian tadi tutorial cara menginstall Skudonet di Debian 12. Semoga bermanfaat!
 
