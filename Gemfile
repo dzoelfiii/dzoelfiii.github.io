@@ -13,4 +13,4 @@ end
 
 gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 
-gem "jekyll-theme-chirpy", path: "." 
+gem "github-pages", group: :jekyll_plugins
