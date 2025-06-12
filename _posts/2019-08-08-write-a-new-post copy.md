@@ -1,9 +1,9 @@
 ---
-title: Writing a New Post
-author: cotes
-date: 2019-08-08 14:10:00 +0800
-categories: [Archive, Tutorial]
-tags: [writing]
+title: Test New Post and Categories
+author: dzoelfi
+date: 2025-06-12 07:00:00 +0700
+categories: [Blogging, Arcfra]
+tags: [arcfra]
 render_with_liquid: false
 ---
 
